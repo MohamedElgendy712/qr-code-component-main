@@ -1,26 +1,36 @@
 /* #D6E1F0
 #2B7EFA */
 
-body{
-    background: #D6E1F0;
+* {
+    box-sizing: border-box;
 }
 
-.parent{
-    padding: 100px;
+body{
+    background: #D6E1F0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
+
+
 
 .child{
     background: white;
-    max-width: 300px;
-    text-align: center;
     padding: 15px;
-    margin: 0 auto;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 294px;
+    height: 465px;
 }
 
 .child img{
-    width: 300px;
+    border-radius: 10px;
+    width: 100%;
 }
 
 .child p {
@@ -28,13 +38,3 @@ body{
     margin-bottom: 30px;
 }
 
-
-@media (max-width  : 600px) {
-    .child{
-        padding: 10px;
-    }
-
-    .child img {
-        width: 250px;
-    }
-}
